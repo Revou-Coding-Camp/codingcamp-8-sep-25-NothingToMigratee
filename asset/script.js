@@ -9,12 +9,6 @@ function button () {
         alert("Please fill in all fields.");
         return;
     }
-    else {
-        alert("Thank you for your submission!");
-        let url = 'Page-two.html?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&comment=${encodeURIComponent(comment)}';
-        window.location.href = url;
-    }
-
 
     document.getElementById("fno").innerHTML = firstName;
     document.getElementById("lno").innerHTML = lastName;
