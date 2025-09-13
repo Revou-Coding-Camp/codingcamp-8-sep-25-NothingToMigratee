@@ -5,6 +5,32 @@ function button () {
     let phone = document.getElementById("phones").value;
     let comment = document.getElementById("comment").value;
 
+    if (firstName === "" || lastName === "" || email === "" || phone === "" || comment === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+    else if(firstName === "") {
+        alert("Please enter your first name.");
+        return;
+    }
+    else if(lastName === "") {
+        alert("Please enter your last name.");
+        return;
+    }
+    else if(email === "") {
+        alert("Please enter your email.");
+        return;
+    }   
+    else if(phone === "") {
+        alert("Please enter your phone number.");
+        return;
+    }   
+    else {
+        alert("Thank you for your submission!");
+        window.location.href = "Page-two.html";
+    }
+
+
     document.getElementById("fno").innerHTML = firstName;
     document.getElementById("lno").innerHTML = lastName;
     document.getElementById("emailo").innerHTML = email;
