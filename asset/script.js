@@ -9,22 +9,6 @@ function button () {
         alert("Please fill in all fields.");
         return;
     }
-    else if(firstName === "") {
-        alert("Please enter your first name.");
-        return;
-    }
-    else if(lastName === "") {
-        alert("Please enter your last name.");
-        return;
-    }
-    else if(email === "") {
-        alert("Please enter your email.");
-        return;
-    }   
-    else if(phone === "") {
-        alert("Please enter your phone number.");
-        return;
-    }   
     else {
         alert("Thank you for your submission!");
         window.location.href = "Page-two.html";
