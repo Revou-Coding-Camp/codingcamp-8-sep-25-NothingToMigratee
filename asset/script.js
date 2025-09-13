@@ -5,13 +5,14 @@ function button () {
     let phone = document.getElementById("phones").value;
     let comment = document.getElementById("comment").value;
 
-    if (firstName === "" || lastName === "" || email === "" || phone === "" || comment === "") {
+    if (firstName === "" || lastName === "" || email === "" || phone === "") {
         alert("Please fill in all fields.");
         return;
     }
     else {
         alert("Thank you for your submission!");
-        window.location.href = "Page-two.html";
+        let url = 'Page-two.html?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}&phone=${encodeURIComponent(phone)}&comment=${encodeURIComponent(comment)}';
+        window.location.href = url;
     }
 
 
